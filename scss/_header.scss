@@ -1,0 +1,115 @@
+section.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    width: 100%;
+    background-color: $color-violet;
+
+    .banner img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 70vh;
+        width: 100%;
+        // opacity: 0.5;
+    }
+    img.car {
+        position: absolute;
+        top: 5vh;
+        right: 0;
+        height: 60vh;
+    }
+    .content {
+        position: absolute;
+        top: 3vh;
+        left: 2vw;
+        width: 47vw;
+    }
+    .content h1 {
+        margin: 0;
+        padding: 0;
+        color: $color-green;
+        font-size: 9em;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .content h2 {
+        padding-top: 2vh 0 0;
+        color: white;
+        font-size: 4.5em;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .content p {
+        padding-top: 2vh;
+        color: white;
+        font-size: 1.6em;
+    }
+    .btns {
+        position: absolute;
+        top: 32vh;
+        left: 2vw;
+        display: flex;
+        width: 22vw;
+        font-size: 1.8em;
+        justify-content: space-between;
+        a {
+            flex-basis: 10.5vw;
+            line-height: 6vh;
+            text-align: center;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: .3s;
+            &:hover {
+                color: $color-green;
+                background-color: black;
+            }
+        }
+    }
+    .diagnose {
+        position: absolute;
+        top: 62vh;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        width: 58vw;
+        justify-content: space-between;
+        .diagnose1 {
+            @include diagnose;
+        }
+        .diagnose2 {
+            @include diagnose;
+        }
+        .diagnose3 {
+            @include diagnose;
+        }
+    }
+    div.arrow {
+        position: absolute;
+        top: 63.5vh;
+        right: 17vw;
+        height: 2.5vw;
+        width: 2.5vw;
+       
+        a {
+            display: block;
+            font-size: 1.6em;
+            text-align: center;
+            line-height: 2.5vw;
+            text-decoration: none;
+            border-radius: 50%;
+            background-color: white;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                background-color: black;
+                color: $color-green;
+            }
+        }
+    }
+
+}

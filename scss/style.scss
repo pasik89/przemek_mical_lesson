@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 10px;
+    font-family: 'Rubik', sans-serif;
+    }
+
+@import 'variables';
+@import 'mixins';
+@import 'navLogo';
+@import 'nav';
+@import 'header';
+@import 'about';
+@import 'whatWeDo';
+@import 'testimonial';
+@import 'contact';

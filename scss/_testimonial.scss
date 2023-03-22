@@ -1,0 +1,57 @@
+section.testimonial {
+    position: relative;
+    top: 120vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 52vw;
+    height: 50vh;
+    h2 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15vw;
+        text-align: center;
+        font-size: 3.5em;
+        font-weight: 500;
+        border-bottom: 1px solid $color-violet;
+    }
+    h3 {
+        position: absolute;
+        top: 7vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55%;
+        font-size: 1.8em;
+        font-weight: 400;
+    }
+    div.wrapTestimonial {
+        display: flex;
+        position: absolute;
+        top: 15vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        justify-content: space-between;
+        .person1 {
+            @include person1;
+        }
+        .person2 {
+            @include person2;
+        }
+    }
+    div.dots {
+        position: absolute;
+        top: 33vh;
+        left: 50%;
+        transform: translateX(-50%);
+        i {
+            font-size: 1.8em;
+            color: $color-violet;
+            letter-spacing: 3px;
+            &:nth-child(1) {
+            color: $color-green;
+            }
+        }  
+    }
+}
