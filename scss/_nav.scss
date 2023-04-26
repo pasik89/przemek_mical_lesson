@@ -1,29 +1,53 @@
 .navi {
-    display: flex;
-    background-color: $color-violet;
-    border-bottom: 10px solid $color-black;
+  display: flex;
+  background-color: $color-violet;
+  border-bottom: 10px solid $color-black;
 
-    &_navi-logo{
-        &_navi_logo-img {
-            display: block;
-            height: 50px;
-            width: 100px;
-            background-color: $color-darkBlue;
-        }
+  &__logo {
+    display: flex;
+    flex-basis: 12%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__menu {
+    // background-color: red;
+    flex-basis: 88%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  &__list-element {
+    width: 150px;
+    height: 75px;
+    line-height: 75px;
+    // border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &__btn-link {
+    color: $color-white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: $color-green;
     }
+  }
 }
 
-
-
-
 // moje opracowanie ver 1
-
 
 // nav.menu {
 //     display: flex;
 //     width: 100%;
 //     justify-content: flex-end;
-//     background-color: #6050E7;     
+//     background-color: #6050E7;
 //     border-bottom: 2vh solid black;
 
 //     ul {
@@ -34,7 +58,7 @@
 //         list-style: none;
 //         background-color: #6050E7;
 //         li {
-            
+
 //             a {
 //                 display: block;
 //                 line-height: 9vh;
@@ -48,7 +72,7 @@
 //                     color: #86FF00;
 //                 }
 //             }
-    
+
 //         &:last-child {
 //             flex-basis: 3vw;
 //         }
