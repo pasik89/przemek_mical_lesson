@@ -1,26 +1,22 @@
 .button {
   display: block;
-  padding: 20px 25px;
+  padding: 20px 50px;
   font-size: 2em;
   color: $color-black;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: $color-white;
   border: none;
   cursor: pointer;
   transition: 0.3s;
   &-link {
-    // display: inline;
-    // display: block;
-    height: 50px;
-    width: 180px;
-    line-height: 50px;
+    background-color: $color-darkBlue;
+    font-size: 1rem;
+    color: $color-white;
     text-align: center;
-    text-decoration: none;
-    // background-color: unset;
-    // color: $color-green;
-    padding: 0;
-    margin: 0;
-    // border-bottom: 2px solid $color-green;
+    text-transform: none;
+    border-radius: 40px;
+    width: 200px;
   }
   &:hover {
     color: $color-green;
@@ -32,7 +28,7 @@
 .header {
   display: flex;
   flex: 55% 45%;
-  padding: 40px 60px;
+  padding: 40px 60px 0;
   background-color: $color-violet;
 
   &__title {
@@ -76,16 +72,16 @@
     }
   }
 
-  &__image-background {
-    // background-image: url("/img/banner.jpg");
-    // width: 800px;
-    // height: 650px;
-    // text-align: center;
-    // background-size: cover;
-    // background-position: center;
-      // background-attachment: fixed;
-      // height: 100vh;
-  }
+  //   &__image-background {
+  //     // background-image: url("/img/banner.jpg");
+  //     // width: 800px;
+  //     // height: 650px;
+  //     // text-align: center;
+  //     // background-size: cover;
+  //     // background-position: center;
+  //     // background-attachment: fixed;
+  //     // height: 100vh;
+  //   }
 }
 
 // moje opracowanie ver 1
