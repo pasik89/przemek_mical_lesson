@@ -1,0 +1,18 @@
+.blocks {
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+
+    &__container1 {
+        display: flex;
+        background-color: royalblue;
+    }
+
+    &__block {
+
+    }
+
+    &__container2 {
+        background-color: coral;
+    }
+}
