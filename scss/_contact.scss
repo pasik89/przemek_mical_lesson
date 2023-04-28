@@ -1,207 +1,273 @@
-section.contact {
-    position: relative;
-    top: 125vh;
-    left: 0;
-    width: 100%;
-    height: 65vh;
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
     background-color: $color-darkBlue;
-    div.wrapContact {
+
+    &__container {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 5vh;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 52vw;
-        div.contactUs {
-            position: relative;
-            flex-basis: 60vh;
-            width: 50%;
-            background-color: $color-darkBlue;
-            h1 {
-                display: block;
-                width: 50%;
-                font-size: 3em;
-                color: white;
-                border-bottom: 1px solid white;
-            }
-            div.form {
-                display: flex;
-                flex-direction: column;
-                ::placeholder {
-                    position: absolute;
-                    bottom: 1vw;
-                    left: 1vw;
-                }
-                input {
-                    padding-top: 50px;
-                    flex-basis: 1vh;
-                    background-color: $color-darkBlue;
-                    border: none;
-                    font-size: 1.4em;
-                    color: white;
-                    border-bottom: 1px solid white;
-                    &:focus {
-                        box-sizing: border-box;
-                        outline: none;
-                        padding-left: 1vw;
-                        padding-bottom: 1vw;
-                     }
-                }
-                div.textArea {
-                    ::placeholder {
-                        position: absolute;
-                        bottom: 2vw;
-                        left: 1vw;
-                    }
-                    textarea {
-                        width: 100%;
-                        border: none;
-                        border-bottom: 1px solid white;
-                        background-color: $color-darkBlue;
-                        font-size: 1.4em;
-                        color: white;
-                        padding-top: 1vw;
-                        &:focus {
-                            box-sizing: border-box;
-                            outline: none;
-                            padding-left: 1vw;
-                            padding-top: 1vw;
-                        }
-                    }
-                }
-                .btn {
-                    position: absolute;
-                    bottom: 10vh;
-                    left: 0;
-                    height: 4vh;
-                    width: 6vw;
-                    font-family: $font-main;
-                    font-size: 1.4em;
-                    text-transform: uppercase;
-                    background-color: white;
-                    border: none;
-                    cursor: pointer;
-                    transition: .3s;
-                    &:hover {
-                        color: $color-green;
-                        background-color: $color-darkBlue;
-                        box-shadow: 0 0 10px white;
-                    }
-                }
-            }
-            div.socials {
-                display: flex;
-                width: 8vw;
-                justify-content: space-around;
-                position: absolute;
-                bottom: 10vh;
-                right: 1.5vw;
-                font-size: 1.6em;
-                a {
-                    flex-basis: 1.6vw;
-                    height: 1.6vw;
-                    border-radius: 50%;
-                    background-color: white;
-                    text-decoration: none;
-                    transition: .3s;
-                    &:hover {
-                        box-shadow: 0 0 10px white;
-                    }
-                    i {
-                        display: block;
-                        color: $color-darkBlue;
-                        line-height: 1.6vw;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-        div.icons {
-            display: flex;
-            width: 30vw;
-            justify-content: space-between;
-            position: absolute;
-            top: 0;
-            right: 0;
-            a {
-                font-size: 1.4em;
-                text-decoration: none;
-                color: white;
-                i {
-                    padding-right: 0.5vw;
-                    font-size: 2em;
-                }
-            }
-        }
-        div.map {
-            position: absolute;
-            top: 9vh;
-            right: 0;
-            img {
-                display: block;
-                width: 90%;
-                margin: 0 0 0 10%;
-            }
-        } 
-        div.newsletter {
-            position: absolute;
-            top: 41vh;
-            right: 0;
-            width: 49%;
-            h2 {
-                color: white;
-                font-size: 1.8em;
-                font-weight: 400;
-                padding-bottom: 1vh;
-            }
-            div.subscribe {
-                display: flex;
-                width: 100%;
-                background-color: pink;
-                ::placeholder {
-                    position: absolute;
-                    top: 50%;
-                    left: 1vw;
-                    transform: translateY(-50%);
-                }
-                input {
-                    flex-grow: 2;
-                    font-size: 1.4em;
-                    &:focus {
-                        outline: none;
-                    }
-                }
-                .btnSubscribe {
-                    height: 4vh;
-                    flex-grow: 1;
-                    font-family: $font-main;
-                    font-size: 1.4em;
-                    color: white;
-                    text-transform: uppercase;
-                    background-color: $color-green;
-                    border: none;
-                    cursor: pointer;
-                    transition: .3s;
-                    &:hover {
-                        color: $color-green;
-                        background-color: $color-darkBlue;
-                        box-shadow: 0 0 10px white;
-                    }
-                }
-            }
-        }   
-        div.footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            line-height: 3em;
-            text-align: center;
-            color: white;
-            font-size: 1.6em;
-            font-weight: 400;
-            border-top: 1px solid white;
-        }
+        align-items: center;
+        // background-color: gray;
+        width: 1000px;
+        padding-top: 70px;
+    }
+
+    &__container-title {
+        display: flex;
+        // background-color: pink;
+        width: 1000px;
+    }
+
+    &__title {
+        @include title;
+        width: 300px;
+        text-align: left;
+        color: $color-white;
+        border-color: $color-white;
+        margin-right: 120px;
+        // background-color: red;
+    }
+
+    &__subtitle {
+
+    }
+
+    &__contact-icons {
+        display: inline-block;
+        font-size: 1.2rem;
+        color: $color-white;
+        line-height: 50px;
+        width: 190px;
+        text-decoration: none;
+        text-align: center;
+        // background-color: #fff;
+
+    }
+    
+    &__container-content {
+        display: flex;
+        background-color: rgb(164, 36, 57);
+    }
+
+    &__container-socials {
+        display: flex;
+
+        background-color: rgb(11, 163, 214);
+    }
+
+    &__container-footer {
+        background-color: rgb(68, 101, 13);
     }
 }
+
+
+// ver 1
+
+// section.contact {
+//     position: relative;
+//     top: 125vh;
+//     left: 0;
+//     width: 100%;
+//     height: 65vh;
+//     background-color: $color-darkBlue;
+//     div.wrapContact {
+//         display: flex;
+//         flex-direction: column;
+//         position: absolute;
+//         top: 5vh;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         width: 52vw;
+//         div.contactUs {
+//             position: relative;
+//             flex-basis: 60vh;
+//             width: 50%;
+//             background-color: $color-darkBlue;
+//             h1 {
+//                 display: block;
+//                 width: 50%;
+//                 font-size: 3em;
+//                 color: white;
+//                 border-bottom: 1px solid white;
+//             }
+//             div.form {
+//                 display: flex;
+//                 flex-direction: column;
+//                 ::placeholder {
+//                     position: absolute;
+//                     bottom: 1vw;
+//                     left: 1vw;
+//                 }
+//                 input {
+//                     padding-top: 50px;
+//                     flex-basis: 1vh;
+//                     background-color: $color-darkBlue;
+//                     border: none;
+//                     font-size: 1.4em;
+//                     color: white;
+//                     border-bottom: 1px solid white;
+//                     &:focus {
+//                         box-sizing: border-box;
+//                         outline: none;
+//                         padding-left: 1vw;
+//                         padding-bottom: 1vw;
+//                      }
+//                 }
+//                 div.textArea {
+//                     ::placeholder {
+//                         position: absolute;
+//                         bottom: 2vw;
+//                         left: 1vw;
+//                     }
+//                     textarea {
+//                         width: 100%;
+//                         border: none;
+//                         border-bottom: 1px solid white;
+//                         background-color: $color-darkBlue;
+//                         font-size: 1.4em;
+//                         color: white;
+//                         padding-top: 1vw;
+//                         &:focus {
+//                             box-sizing: border-box;
+//                             outline: none;
+//                             padding-left: 1vw;
+//                             padding-top: 1vw;
+//                         }
+//                     }
+//                 }
+//                 .btn {
+//                     position: absolute;
+//                     bottom: 10vh;
+//                     left: 0;
+//                     height: 4vh;
+//                     width: 6vw;
+//                     font-family: $font-main;
+//                     font-size: 1.4em;
+//                     text-transform: uppercase;
+//                     background-color: white;
+//                     border: none;
+//                     cursor: pointer;
+//                     transition: .3s;
+//                     &:hover {
+//                         color: $color-green;
+//                         background-color: $color-darkBlue;
+//                         box-shadow: 0 0 10px white;
+//                     }
+//                 }
+//             }
+//             div.socials {
+//                 display: flex;
+//                 width: 8vw;
+//                 justify-content: space-around;
+//                 position: absolute;
+//                 bottom: 10vh;
+//                 right: 1.5vw;
+//                 font-size: 1.6em;
+//                 a {
+//                     flex-basis: 1.6vw;
+//                     height: 1.6vw;
+//                     border-radius: 50%;
+//                     background-color: white;
+//                     text-decoration: none;
+//                     transition: .3s;
+//                     &:hover {
+//                         box-shadow: 0 0 10px white;
+//                     }
+//                     i {
+//                         display: block;
+//                         color: $color-darkBlue;
+//                         line-height: 1.6vw;
+//                         text-align: center;
+//                     }
+//                 }
+//             }
+//         }
+//         div.icons {
+//             display: flex;
+//             width: 30vw;
+//             justify-content: space-between;
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             a {
+//                 font-size: 1.4em;
+//                 text-decoration: none;
+//                 color: white;
+//                 i {
+//                     padding-right: 0.5vw;
+//                     font-size: 2em;
+//                 }
+//             }
+//         }
+//         div.map {
+//             position: absolute;
+//             top: 9vh;
+//             right: 0;
+//             img {
+//                 display: block;
+//                 width: 90%;
+//                 margin: 0 0 0 10%;
+//             }
+//         } 
+//         div.newsletter {
+//             position: absolute;
+//             top: 41vh;
+//             right: 0;
+//             width: 49%;
+//             h2 {
+//                 color: white;
+//                 font-size: 1.8em;
+//                 font-weight: 400;
+//                 padding-bottom: 1vh;
+//             }
+//             div.subscribe {
+//                 display: flex;
+//                 width: 100%;
+//                 background-color: pink;
+//                 ::placeholder {
+//                     position: absolute;
+//                     top: 50%;
+//                     left: 1vw;
+//                     transform: translateY(-50%);
+//                 }
+//                 input {
+//                     flex-grow: 2;
+//                     font-size: 1.4em;
+//                     &:focus {
+//                         outline: none;
+//                     }
+//                 }
+//                 .btnSubscribe {
+//                     height: 4vh;
+//                     flex-grow: 1;
+//                     font-family: $font-main;
+//                     font-size: 1.4em;
+//                     color: white;
+//                     text-transform: uppercase;
+//                     background-color: $color-green;
+//                     border: none;
+//                     cursor: pointer;
+//                     transition: .3s;
+//                     &:hover {
+//                         color: $color-green;
+//                         background-color: $color-darkBlue;
+//                         box-shadow: 0 0 10px white;
+//                     }
+//                 }
+//             }
+//         }   
+//         div.footer {
+//             position: absolute;
+//             bottom: 0;
+//             left: 0;
+//             width: 100%;
+//             line-height: 3em;
+//             text-align: center;
+//             color: white;
+//             font-size: 1.6em;
+//             font-weight: 400;
+//             border-top: 1px solid white;
+//         }
+//     }
+// }
