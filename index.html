@@ -37,7 +37,7 @@
         <li class="navi__list-element"><a class="navi__btn-link" href="#about">About</a></li>
         <li class="navi__list-element"><a class="navi__btn-link" href="#furniture">Furnitures</a></li>
         <li class="navi__list-element"><a class="navi__btn-link" href="#testimonial">Testimonial</a></li>
-        <li class="navi__list-element"><a class="navi__btn-link" href="#">Contact Us</a></li>
+        <li class="navi__list-element"><a class="navi__btn-link" href="#contact">Contact Us</a></li>
         <li class="navi__list-element"><a class="navi__btn-link" href="#"><i class="fa-solid fa-circle-user"></i>
             Login/Register</a></li>
         <li class="navi__list-element"><a class="navi__btn-link" href="#"><i
@@ -61,7 +61,7 @@
     <div class="header__image-container">
       <img class="header__image" src="img/car.png" alt="car" />
     </div>
-    <div class="header__image-background">
+    <!-- <div class="header__image-background"> -->
     </div>
   </section>
 
@@ -155,24 +155,23 @@
       <div class="contact__container-title">
         <h1 class="contact__title">Contact Us</h1>
         <div class="contact__subtitle">
-          <a class="contact__contact-icons" href="#"><i class="fa-solid fa-location-dot"></i> Locations</a>
-          <a class="contact__contact-icons" href="#"><i class="fa-solid fa-phone"></i> +71 908586458</a>
-          <a class="contact__contact-icons" href="#"><i class="fa-solid fa-envelope"></i> demo@gmail.com</a>
+          <a class="contact__contact-icons" href="#"><i
+              class="fa-solid fa-location-dot contact__contact-icon"></i>Locations</a>
+          <a class="contact__contact-icons" href="#"><i class="fa-solid fa-phone contact__contact-icon"></i>+71
+            908586458</a>
+          <a class="contact__contact-icons" href="#"><i
+              class="fa-solid fa-envelope contact__contact-icon"></i>demo@gmail.com</a>
         </div>
       </div>
       <div class="contact__container-content">
-        <form action="#">
-          <div class="contact__form">
-            <input type="text" placeholder="Full Name">
-            <input type="text" placeholder="Email">
-            <input type="number" placeholder="Phone Number">
-            <div class="textArea">
-              <textarea name="Message" placeholder="Message" rows="6"></textarea>
-            </div>
-          </div>
+        <form class="contact__form" action="#">
+          <input class="contact__form-input" type="text" placeholder="Full Name">
+          <input class="contact__form-input" type="text" placeholder="Email">
+          <input class="contact__form-input" type="number" placeholder="Phone Number">
+          <textarea class="contact__form-textArea" name="Message" placeholder="Message" rows="6"></textarea>
         </form>
-        <div class="map">
-          <img src="img/map.jpg" alt="">
+        <div class="contact__map">
+          <img class="contact__map-img" src="img/map.jpg" alt="">
         </div>
       </div>
       <div class="contact__container-socials">
@@ -186,7 +185,7 @@
         <div class="contact__newsletter">
           <h2 class="contact__newsletter-title">Newsletter</h2>
           <div class="contact__newsletter-content">
-            <input type="text" placeholder="Enter your email">
+            <input class="contact__newsletter-input" type="text" placeholder="Enter your email">
             <button class="contact__button-subscribe button" type="submit">Subscribe</button>
           </div>
         </div>
@@ -196,6 +195,10 @@
       </div>
     </div>
   </section>
+
+
+  <!-- wersja 1 -->
+
 
   <!-- <section class="header">
     <div class="banner">
