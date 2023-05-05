@@ -16,5 +16,27 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
     }
   ],
-  "applications": []
+  "applications": [],
+  "menu": [
+    {
+      "name": "Home",
+      "url": "home"
+    },
+    {
+      "name": "About",
+      "url": "about"
+    },
+    {
+      "name": "Furnitures",
+      "url": "furnitures"
+    },
+    {
+      "name": "Testimonial",
+      "url": "testimonial"
+    },
+    {
+      "name": "Contact Us",
+      "url": "contact-us"
+    }
+  ]
 }
