@@ -1,1 +1,0 @@
-# mical_web_lesson
