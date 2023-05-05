@@ -1,124 +1,140 @@
-// domieszki dla header
-@mixin diagnose {
-    box-sizing: border-box;
-            width: 18vw;
-            height: 25vh;
-            text-align: center;
-            background-color: white;
-            padding: 3vh 1vw;
-            box-shadow: 0 0 3px rgb(219, 216, 216);
-            h3 {
-                font-size: 2em;
-                font-weight: 400;
-                text-transform: uppercase;
-            }
-            img {
-                height: 5vh;
-                padding: 1vh 0;
-            }
-            p {
-                font-size: 1.8em;
-                color: gray;
-            }
+@mixin title {
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-align: center;
+  width: 450px;
+  line-height: 50px;
+  border-bottom: 1px solid $color-violet;
 }
 
-// domieszki dla about i whatWeDo
-@mixin btnA {
-    display: block;
-            width: 10vw;
-            height: 6vh;
-            background-color: $color-darkBlue;
-            border-radius: 100px;
-            line-height: 6vh;
-            text-align: center;
-            font-size: 1.8em;
-            text-decoration: none;
-            color: white;
-            transition: .3s;
-            &:hover {
-                background-color: white;
-                color: $color-green;
-                box-shadow: 0 0 5px $color-darkBlue;
-            }
+@mixin subtitle {
+  font-size: 1rem;
+  line-height: 50px;
 }
 
-// domieszki do testimonial
-@mixin person1 {
-    position: relative;
-            top: 0;
-            left: 0;
-            background-color: $color-darkBlue;
-            width: 48.5%;
-            height: 30vh;
-            img {
-                position: absolute;
-                top: 4vh;
-                left: 5%;
-            }
-            .person1wrap {
-                position: absolute;
-                top: 7vh;
-                left: 30%;
-                h4 {
-                    color: white;
-                    font-size: 1.8em;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                }
-                h5 {
-                    color: $color-violet;
-                    font-size: 1.6em;
-                    font-weight: 400;
-                }
-            }
-            p {
-                position: absolute;
-                top: 16vh;
-                left: 5%;
-                width: 90%;
-                font-size: 1.5em;
-                line-height: 2.5vh;
-                color: white;
-                text-align: justify;
-            } 
-}
+// wersja 1
 
-@mixin person2 {
-    position: relative;
-            top: 0;
-            left: 0;
-            background-color: $color-darkBlue;
-            width: 48.5%;
-            height: 30vh;
-            img {
-                position: absolute;
-                top: 4vh;
-                left: 5%;
-            }
-            .person2wrap {
-                position: absolute;
-                top: 7vh;
-                left: 30%;
-                h4 {
-                    color: white;
-                    font-size: 1.8em;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                }
-                h5 {
-                    color: $color-violet;
-                    font-size: 1.6em;
-                    font-weight: 400;
-                }
-            }
-            p {
-                position: absolute;
-                top: 16vh;
-                left: 5%;
-                width: 90%;
-                font-size: 1.5em;
-                line-height: 2.5vh;
-                color: white;
-                text-align: justify;
-            } 
-}
+// // domieszki dla header
+// @mixin diagnose {
+//     box-sizing: border-box;
+//             width: 18vw;
+//             height: 25vh;
+//             text-align: center;
+//             background-color: white;
+//             padding: 3vh 1vw;
+//             box-shadow: 0 0 3px rgb(219, 216, 216);
+//             h3 {
+//                 font-size: 2em;
+//                 font-weight: 400;
+//                 text-transform: uppercase;
+//             }
+//             img {
+//                 height: 5vh;
+//                 padding: 1vh 0;
+//             }
+//             p {
+//                 font-size: 1.8em;
+//                 color: gray;
+//             }
+// }
+
+// // domieszki dla about i whatWeDo
+// @mixin btnA {
+//     display: block;
+//             width: 10vw;
+//             height: 6vh;
+//             background-color: $color-darkBlue;
+//             border-radius: 100px;
+//             line-height: 6vh;
+//             text-align: center;
+//             font-size: 1.8em;
+//             text-decoration: none;
+//             color: white;
+//             transition: .3s;
+//             &:hover {
+//                 background-color: white;
+//                 color: $color-green;
+//                 box-shadow: 0 0 5px $color-darkBlue;
+//             }
+// }
+
+// // domieszki do testimonial
+// @mixin person1 {
+//     position: relative;
+//             top: 0;
+//             left: 0;
+//             background-color: $color-darkBlue;
+//             width: 48.5%;
+//             height: 30vh;
+//             img {
+//                 position: absolute;
+//                 top: 4vh;
+//                 left: 5%;
+//             }
+//             .person1wrap {
+//                 position: absolute;
+//                 top: 7vh;
+//                 left: 30%;
+//                 h4 {
+//                     color: white;
+//                     font-size: 1.8em;
+//                     text-transform: uppercase;
+//                     font-weight: 400;
+//                 }
+//                 h5 {
+//                     color: $color-violet;
+//                     font-size: 1.6em;
+//                     font-weight: 400;
+//                 }
+//             }
+//             p {
+//                 position: absolute;
+//                 top: 16vh;
+//                 left: 5%;
+//                 width: 90%;
+//                 font-size: 1.5em;
+//                 line-height: 2.5vh;
+//                 color: white;
+//                 text-align: justify;
+//             }
+// }
+
+// @mixin person2 {
+//     position: relative;
+//             top: 0;
+//             left: 0;
+//             background-color: $color-darkBlue;
+//             width: 48.5%;
+//             height: 30vh;
+//             img {
+//                 position: absolute;
+//                 top: 4vh;
+//                 left: 5%;
+//             }
+//             .person2wrap {
+//                 position: absolute;
+//                 top: 7vh;
+//                 left: 30%;
+//                 h4 {
+//                     color: white;
+//                     font-size: 1.8em;
+//                     text-transform: uppercase;
+//                     font-weight: 400;
+//                 }
+//                 h5 {
+//                     color: $color-violet;
+//                     font-size: 1.6em;
+//                     font-weight: 400;
+//                 }
+//             }
+//             p {
+//                 position: absolute;
+//                 top: 16vh;
+//                 left: 5%;
+//                 width: 90%;
+//                 font-size: 1.5em;
+//                 line-height: 2.5vh;
+//                 color: white;
+//                 text-align: justify;
+//             }
+// }

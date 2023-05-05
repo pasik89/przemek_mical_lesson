@@ -1,0 +1,881 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Rubik", sans-serif;
+}
+
+div.logo img {
+  position: absolute;
+  top: 1.5vh;
+  left: 3%;
+  height: 6vh;
+}
+div.logo img:hover {
+  cursor: pointer;
+}
+
+nav.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #6050E7;
+  border-bottom: 2vh solid black;
+}
+nav.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9vh;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  background-color: #6050E7;
+}
+nav.menu ul li a {
+  display: block;
+  line-height: 9vh;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6em;
+  font-weight: 400;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav.menu ul li a:hover {
+  color: #86FF00;
+}
+nav.menu ul li:last-child {
+  -ms-flex-preferred-size: 3vw;
+      flex-basis: 3vw;
+}
+
+section.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 70vh;
+  width: 100%;
+  background-color: #6050E7;
+}
+section.header .banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70vh;
+  width: 100%;
+}
+section.header img.car {
+  position: absolute;
+  top: 5vh;
+  right: 0;
+  height: 60vh;
+}
+section.header .content {
+  position: absolute;
+  top: 3vh;
+  left: 2vw;
+  width: 47vw;
+}
+section.header .content h1 {
+  margin: 0;
+  padding: 0;
+  color: #86FF00;
+  font-size: 9em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section.header .content h2 {
+  padding-top: 2vh 0 0;
+  color: white;
+  font-size: 4.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+section.header .content p {
+  padding-top: 2vh;
+  color: white;
+  font-size: 1.6em;
+}
+section.header .btns {
+  position: absolute;
+  top: 32vh;
+  left: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 22vw;
+  font-size: 1.8em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.header .btns a {
+  -ms-flex-preferred-size: 10.5vw;
+      flex-basis: 10.5vw;
+  line-height: 6vh;
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.header .btns a:hover {
+  color: #86FF00;
+  background-color: black;
+}
+section.header .diagnose {
+  position: absolute;
+  top: 62vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 58vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.header .diagnose .diagnose1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 18vw;
+  height: 25vh;
+  text-align: center;
+  background-color: white;
+  padding: 3vh 1vw;
+  -webkit-box-shadow: 0 0 3px rgb(219, 216, 216);
+          box-shadow: 0 0 3px rgb(219, 216, 216);
+}
+section.header .diagnose .diagnose1 h3 {
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section.header .diagnose .diagnose1 img {
+  height: 5vh;
+  padding: 1vh 0;
+}
+section.header .diagnose .diagnose1 p {
+  font-size: 1.8em;
+  color: gray;
+}
+section.header .diagnose .diagnose2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 18vw;
+  height: 25vh;
+  text-align: center;
+  background-color: white;
+  padding: 3vh 1vw;
+  -webkit-box-shadow: 0 0 3px rgb(219, 216, 216);
+          box-shadow: 0 0 3px rgb(219, 216, 216);
+}
+section.header .diagnose .diagnose2 h3 {
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section.header .diagnose .diagnose2 img {
+  height: 5vh;
+  padding: 1vh 0;
+}
+section.header .diagnose .diagnose2 p {
+  font-size: 1.8em;
+  color: gray;
+}
+section.header .diagnose .diagnose3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 18vw;
+  height: 25vh;
+  text-align: center;
+  background-color: white;
+  padding: 3vh 1vw;
+  -webkit-box-shadow: 0 0 3px rgb(219, 216, 216);
+          box-shadow: 0 0 3px rgb(219, 216, 216);
+}
+section.header .diagnose .diagnose3 h3 {
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section.header .diagnose .diagnose3 img {
+  height: 5vh;
+  padding: 1vh 0;
+}
+section.header .diagnose .diagnose3 p {
+  font-size: 1.8em;
+  color: gray;
+}
+section.header div.arrow {
+  position: absolute;
+  top: 63.5vh;
+  right: 17vw;
+  height: 2.5vw;
+  width: 2.5vw;
+}
+section.header div.arrow a {
+  display: block;
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 2.5vw;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.header div.arrow a:hover {
+  background-color: black;
+  color: #86FF00;
+}
+
+section.about {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+section.about h2 {
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 23vw;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 500;
+  border-bottom: 1px solid #6050E7;
+}
+section.about div.aboutImg {
+  position: relative;
+}
+section.about div.aboutImg img {
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 70vh;
+  width: 45vw;
+}
+section.about div.aboutImg h3 {
+  position: absolute;
+  top: 52vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 2.7em;
+  font-weight: 400;
+}
+section.about div.aboutImg p {
+  position: absolute;
+  top: 57vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 30vw;
+  text-align: justify;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+section.about div.aboutImg a {
+  position: absolute;
+  top: 85vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 10vw;
+  height: 6vh;
+  background-color: rgb(0, 3, 41);
+  border-radius: 100px;
+  line-height: 6vh;
+  text-align: center;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.about div.aboutImg a:hover {
+  background-color: white;
+  color: #86FF00;
+  -webkit-box-shadow: 0 0 5px rgb(0, 3, 41);
+          box-shadow: 0 0 5px rgb(0, 3, 41);
+}
+
+section.whatWeDo {
+  position: relative;
+  top: 110vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 45vw;
+  height: 109vh;
+}
+section.whatWeDo h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15vw;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 500;
+  border-bottom: 1px solid #6050E7;
+}
+section.whatWeDo h3 {
+  position: absolute;
+  top: 7vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 65%;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+section.whatWeDo .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  position: absolute;
+  top: 15vh;
+}
+section.whatWeDo .gallery div.imgWrap {
+  position: relative;
+}
+section.whatWeDo .gallery div.imgWrap div.miniWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+section.whatWeDo .gallery div.imgWrap div.miniWrap h4 {
+  color: white;
+  font-size: 2.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section.whatWeDo .gallery div.imgWrap div.miniWrap h5 {
+  color: #86FF00;
+  font-size: 1.6em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.whatWeDo .gallery div img {
+  display: block;
+  width: 21vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section.whatWeDo .gallery div img:hover {
+  opacity: 0.9;
+}
+section.whatWeDo a {
+  position: absolute;
+  top: 88vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 10vw;
+  height: 6vh;
+  background-color: rgb(0, 3, 41);
+  border-radius: 100px;
+  line-height: 6vh;
+  text-align: center;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.whatWeDo a:hover {
+  background-color: white;
+  color: #86FF00;
+  -webkit-box-shadow: 0 0 5px rgb(0, 3, 41);
+          box-shadow: 0 0 5px rgb(0, 3, 41);
+}
+section.whatWeDo div.breakLine {
+  position: absolute;
+  top: 115vh;
+  left: 50%;
+  width: 215%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom: 1px solid lightgray;
+}
+
+section.testimonial {
+  position: relative;
+  top: 120vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 52vw;
+  height: 50vh;
+}
+section.testimonial h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15vw;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 500;
+  border-bottom: 1px solid #6050E7;
+}
+section.testimonial h3 {
+  position: absolute;
+  top: 7vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 55%;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+section.testimonial div.wrapTestimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.testimonial div.wrapTestimonial .person1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 3, 41);
+  width: 48.5%;
+  height: 30vh;
+}
+section.testimonial div.wrapTestimonial .person1 img {
+  position: absolute;
+  top: 4vh;
+  left: 5%;
+}
+section.testimonial div.wrapTestimonial .person1 .person1wrap {
+  position: absolute;
+  top: 7vh;
+  left: 30%;
+}
+section.testimonial div.wrapTestimonial .person1 .person1wrap h4 {
+  color: white;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+section.testimonial div.wrapTestimonial .person1 .person1wrap h5 {
+  color: #6050E7;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+section.testimonial div.wrapTestimonial .person1 p {
+  position: absolute;
+  top: 16vh;
+  left: 5%;
+  width: 90%;
+  font-size: 1.5em;
+  line-height: 2.5vh;
+  color: white;
+  text-align: justify;
+}
+section.testimonial div.wrapTestimonial .person2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 3, 41);
+  width: 48.5%;
+  height: 30vh;
+}
+section.testimonial div.wrapTestimonial .person2 img {
+  position: absolute;
+  top: 4vh;
+  left: 5%;
+}
+section.testimonial div.wrapTestimonial .person2 .person2wrap {
+  position: absolute;
+  top: 7vh;
+  left: 30%;
+}
+section.testimonial div.wrapTestimonial .person2 .person2wrap h4 {
+  color: white;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+section.testimonial div.wrapTestimonial .person2 .person2wrap h5 {
+  color: #6050E7;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+section.testimonial div.wrapTestimonial .person2 p {
+  position: absolute;
+  top: 16vh;
+  left: 5%;
+  width: 90%;
+  font-size: 1.5em;
+  line-height: 2.5vh;
+  color: white;
+  text-align: justify;
+}
+section.testimonial div.dots {
+  position: absolute;
+  top: 33vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+section.testimonial div.dots i {
+  font-size: 1.8em;
+  color: #6050E7;
+  letter-spacing: 3px;
+}
+section.testimonial div.dots i:nth-child(1) {
+  color: #86FF00;
+}
+
+section.contact {
+  position: relative;
+  top: 125vh;
+  left: 0;
+  width: 100%;
+  height: 65vh;
+  background-color: rgb(0, 3, 41);
+}
+section.contact div.wrapContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 52vw;
+}
+section.contact div.wrapContact div.contactUs {
+  position: relative;
+  -ms-flex-preferred-size: 60vh;
+      flex-basis: 60vh;
+  width: 50%;
+  background-color: rgb(0, 3, 41);
+}
+section.contact div.wrapContact div.contactUs h1 {
+  display: block;
+  width: 50%;
+  font-size: 3em;
+  color: white;
+  border-bottom: 1px solid white;
+}
+section.contact div.wrapContact div.contactUs div.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.contact div.wrapContact div.contactUs div.form ::-webkit-input-placeholder {
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form ::-moz-placeholder {
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form :-ms-input-placeholder {
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form ::-ms-input-placeholder {
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form ::placeholder {
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form input {
+  padding-top: 50px;
+  -ms-flex-preferred-size: 1vh;
+      flex-basis: 1vh;
+  background-color: rgb(0, 3, 41);
+  border: none;
+  font-size: 1.4em;
+  color: white;
+  border-bottom: 1px solid white;
+}
+section.contact div.wrapContact div.contactUs div.form input:focus {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  padding-left: 1vw;
+  padding-bottom: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form div.textArea ::-webkit-input-placeholder {
+  position: absolute;
+  bottom: 2vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form div.textArea ::-moz-placeholder {
+  position: absolute;
+  bottom: 2vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form div.textArea :-ms-input-placeholder {
+  position: absolute;
+  bottom: 2vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form div.textArea ::-ms-input-placeholder {
+  position: absolute;
+  bottom: 2vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form div.textArea ::placeholder {
+  position: absolute;
+  bottom: 2vw;
+  left: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form div.textArea textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: rgb(0, 3, 41);
+  font-size: 1.4em;
+  color: white;
+  padding-top: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form div.textArea textarea:focus {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  padding-left: 1vw;
+  padding-top: 1vw;
+}
+section.contact div.wrapContact div.contactUs div.form .btn {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  height: 4vh;
+  width: 6vw;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.contact div.wrapContact div.contactUs div.form .btn:hover {
+  color: #86FF00;
+  background-color: rgb(0, 3, 41);
+  -webkit-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
+}
+section.contact div.wrapContact div.contactUs div.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 8vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: 10vh;
+  right: 1.5vw;
+  font-size: 1.6em;
+}
+section.contact div.wrapContact div.contactUs div.socials a {
+  -ms-flex-preferred-size: 1.6vw;
+      flex-basis: 1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  background-color: white;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.contact div.wrapContact div.contactUs div.socials a:hover {
+  -webkit-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
+}
+section.contact div.wrapContact div.contactUs div.socials a i {
+  display: block;
+  color: rgb(0, 3, 41);
+  line-height: 1.6vw;
+  text-align: center;
+}
+section.contact div.wrapContact div.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+section.contact div.wrapContact div.icons a {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: white;
+}
+section.contact div.wrapContact div.icons a i {
+  padding-right: 0.5vw;
+  font-size: 2em;
+}
+section.contact div.wrapContact div.map {
+  position: absolute;
+  top: 9vh;
+  right: 0;
+}
+section.contact div.wrapContact div.map img {
+  display: block;
+  width: 90%;
+  margin: 0 0 0 10%;
+}
+section.contact div.wrapContact div.newsletter {
+  position: absolute;
+  top: 41vh;
+  right: 0;
+  width: 49%;
+}
+section.contact div.wrapContact div.newsletter h2 {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-bottom: 1vh;
+}
+section.contact div.wrapContact div.newsletter div.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: pink;
+}
+section.contact div.wrapContact div.newsletter div.subscribe ::-webkit-input-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 1vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+section.contact div.wrapContact div.newsletter div.subscribe ::-moz-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 1vw;
+  transform: translateY(-50%);
+}
+section.contact div.wrapContact div.newsletter div.subscribe :-ms-input-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 1vw;
+  transform: translateY(-50%);
+}
+section.contact div.wrapContact div.newsletter div.subscribe ::-ms-input-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 1vw;
+  transform: translateY(-50%);
+}
+section.contact div.wrapContact div.newsletter div.subscribe ::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 1vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+section.contact div.wrapContact div.newsletter div.subscribe input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  font-size: 1.4em;
+}
+section.contact div.wrapContact div.newsletter div.subscribe input:focus {
+  outline: none;
+}
+section.contact div.wrapContact div.newsletter div.subscribe .btnSubscribe {
+  height: 4vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4em;
+  color: white;
+  text-transform: uppercase;
+  background-color: #86FF00;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.contact div.wrapContact div.newsletter div.subscribe .btnSubscribe:hover {
+  color: #86FF00;
+  background-color: rgb(0, 3, 41);
+  -webkit-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
+}
+section.contact div.wrapContact div.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 3em;
+  text-align: center;
+  color: white;
+  font-size: 1.6em;
+  font-weight: 400;
+  border-top: 1px solid white;
+}/*# sourceMappingURL=style.css.map */

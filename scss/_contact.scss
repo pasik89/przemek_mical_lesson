@@ -1,207 +1,411 @@
-section.contact {
-    position: relative;
-    top: 125vh;
-    left: 0;
-    width: 100%;
-    height: 65vh;
-    background-color: $color-darkBlue;
-    div.wrapContact {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 5vh;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 52vw;
-        div.contactUs {
-            position: relative;
-            flex-basis: 60vh;
-            width: 50%;
-            background-color: $color-darkBlue;
-            h1 {
-                display: block;
-                width: 50%;
-                font-size: 3em;
-                color: white;
-                border-bottom: 1px solid white;
-            }
-            div.form {
-                display: flex;
-                flex-direction: column;
-                ::placeholder {
-                    position: absolute;
-                    bottom: 1vw;
-                    left: 1vw;
-                }
-                input {
-                    padding-top: 50px;
-                    flex-basis: 1vh;
-                    background-color: $color-darkBlue;
-                    border: none;
-                    font-size: 1.4em;
-                    color: white;
-                    border-bottom: 1px solid white;
-                    &:focus {
-                        box-sizing: border-box;
-                        outline: none;
-                        padding-left: 1vw;
-                        padding-bottom: 1vw;
-                     }
-                }
-                div.textArea {
-                    ::placeholder {
-                        position: absolute;
-                        bottom: 2vw;
-                        left: 1vw;
-                    }
-                    textarea {
-                        width: 100%;
-                        border: none;
-                        border-bottom: 1px solid white;
-                        background-color: $color-darkBlue;
-                        font-size: 1.4em;
-                        color: white;
-                        padding-top: 1vw;
-                        &:focus {
-                            box-sizing: border-box;
-                            outline: none;
-                            padding-left: 1vw;
-                            padding-top: 1vw;
-                        }
-                    }
-                }
-                .btn {
-                    position: absolute;
-                    bottom: 10vh;
-                    left: 0;
-                    height: 4vh;
-                    width: 6vw;
-                    font-family: $font-main;
-                    font-size: 1.4em;
-                    text-transform: uppercase;
-                    background-color: white;
-                    border: none;
-                    cursor: pointer;
-                    transition: .3s;
-                    &:hover {
-                        color: $color-green;
-                        background-color: $color-darkBlue;
-                        box-shadow: 0 0 10px white;
-                    }
-                }
-            }
-            div.socials {
-                display: flex;
-                width: 8vw;
-                justify-content: space-around;
-                position: absolute;
-                bottom: 10vh;
-                right: 1.5vw;
-                font-size: 1.6em;
-                a {
-                    flex-basis: 1.6vw;
-                    height: 1.6vw;
-                    border-radius: 50%;
-                    background-color: white;
-                    text-decoration: none;
-                    transition: .3s;
-                    &:hover {
-                        box-shadow: 0 0 10px white;
-                    }
-                    i {
-                        display: block;
-                        color: $color-darkBlue;
-                        line-height: 1.6vw;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-        div.icons {
-            display: flex;
-            width: 30vw;
-            justify-content: space-between;
-            position: absolute;
-            top: 0;
-            right: 0;
-            a {
-                font-size: 1.4em;
-                text-decoration: none;
-                color: white;
-                i {
-                    padding-right: 0.5vw;
-                    font-size: 2em;
-                }
-            }
-        }
-        div.map {
-            position: absolute;
-            top: 9vh;
-            right: 0;
-            img {
-                display: block;
-                width: 90%;
-                margin: 0 0 0 10%;
-            }
-        } 
-        div.newsletter {
-            position: absolute;
-            top: 41vh;
-            right: 0;
-            width: 49%;
-            h2 {
-                color: white;
-                font-size: 1.8em;
-                font-weight: 400;
-                padding-bottom: 1vh;
-            }
-            div.subscribe {
-                display: flex;
-                width: 100%;
-                background-color: pink;
-                ::placeholder {
-                    position: absolute;
-                    top: 50%;
-                    left: 1vw;
-                    transform: translateY(-50%);
-                }
-                input {
-                    flex-grow: 2;
-                    font-size: 1.4em;
-                    &:focus {
-                        outline: none;
-                    }
-                }
-                .btnSubscribe {
-                    height: 4vh;
-                    flex-grow: 1;
-                    font-family: $font-main;
-                    font-size: 1.4em;
-                    color: white;
-                    text-transform: uppercase;
-                    background-color: $color-green;
-                    border: none;
-                    cursor: pointer;
-                    transition: .3s;
-                    &:hover {
-                        color: $color-green;
-                        background-color: $color-darkBlue;
-                        box-shadow: 0 0 10px white;
-                    }
-                }
-            }
-        }   
-        div.footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            line-height: 3em;
-            text-align: center;
-            color: white;
-            font-size: 1.6em;
-            font-weight: 400;
-            border-top: 1px solid white;
-        }
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  background-color: $color-darkBlue;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    padding-top: 70px;
+
+    @media screen and (max-width: 1200px) {
+      width: 800px;
     }
+  }
+
+  &__container-title {
+    display: flex;
+    width: 100%;
+  }
+
+  &__title {
+    @include title;
+    width: 300px;
+    text-align: left;
+    color: $color-white;
+    border-color: $color-white;
+    margin-right: 80px;
+  }
+
+  &__subtitle {
+    display: flex;
+    width: 620px;
+    justify-content: space-between;
+  }
+
+  &__contact-icons {
+    font-size: 1.1rem;
+    color: $color-white;
+    line-height: 50px;
+    text-decoration: none;
+  }
+
+  &__contact-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+
+  &__container-content {
+    display: flex;
+    margin: 50px 0 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    ::placeholder {
+      padding: 30px;
+    }
+  }
+
+  &__form-input {
+    flex-basis: 70px;
+    width: 450px;
+    background-color: $color-darkBlue;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    border-bottom: 1px solid white;
+    &:focus {
+      box-sizing: border-box;
+      outline: none;
+    }
+  }
+
+  &__form-textArea {
+    background-color: $color-darkBlue;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    color: white;
+    border-bottom: 1px solid white;
+    &:focus {
+      box-sizing: border-box;
+      outline: none;
+    }
+  }
+
+  &__map {
+    display: flex;
+
+    @media screen and (max-width: 1200px) {
+      align-items: center;
+    }
+  }
+
+  &__map-img {
+    height: 100%;
+
+    @media screen and (max-width: 1200px) {
+      height: 200px;
+    }
+  }
+
+  &__container-socials {
+    display: flex;
+    margin-top: 10px;
+    width: 1000px;
+    height: 100px;
+    align-items: center;
+
+    @media screen and (max-width: 1200px) {
+      width: 800px;
+    }
+  }
+
+  &__button {
+    width: 150px;
+    height: 50px;
+    padding: 0;
+  }
+
+  &__socials {
+    width: 300px;
+    height: 50px;
+    text-align: right;
+  }
+
+  &__social-dot {
+    display: inline-block;
+    width: 50px;
+    font-size: 1.5rem;
+    color: $color-darkBlue;
+    line-height: 50px;
+    background-color: $color-white;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 1px;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0 0 10px $color-white;
+    }
+  }
+
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: -40px 0 0 10px;
+  }
+
+  &__newsletter-title {
+    font-size: 1rem;
+    color: $color-white;
+    line-height: 2rem;
+  }
+
+  &__newsletter-content {
+    display: flex;
+  }
+
+  &__newsletter-input {
+    height: 50px;
+    flex-grow: 2;
+    &:focus {
+      box-sizing: border-box;
+      outline: none;
+    }
+  }
+
+  &__button-subscribe {
+    flex-grow: 1;
+    height: 50px;
+    padding: 0;
+    color: white;
+    background-color: $color-green;
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      color: $color-green;
+      background-color: $color-darkBlue;
+      box-shadow: 0 0 10px white;
+    }
+  }
+
+  &__container-footer {
+    width: 1000px;
+    border-top: 1px solid $color-white;
+  }
+
+  &__footer {
+    font-size: 1rem;
+    color: $color-white;
+    text-align: center;
+    line-height: 3rem;
+  }
 }
+
+// ver 1
+
+// section.contact {
+//     position: relative;
+//     top: 125vh;
+//     left: 0;
+//     width: 100%;
+//     height: 65vh;
+//     background-color: $color-darkBlue;
+//     div.wrapContact {
+//         display: flex;
+//         flex-direction: column;
+//         position: absolute;
+//         top: 5vh;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         width: 52vw;
+//         div.contactUs {
+//             position: relative;
+//             flex-basis: 60vh;
+//             width: 50%;
+//             background-color: $color-darkBlue;
+//             h1 {
+//                 display: block;
+//                 width: 50%;
+//                 font-size: 3em;
+//                 color: white;
+//                 border-bottom: 1px solid white;
+//             }
+//             div.form {
+//                 display: flex;
+//                 flex-direction: column;
+//                 ::placeholder {
+//                     position: absolute;
+//                     bottom: 1vw;
+//                     left: 1vw;
+//                 }
+//                 input {
+//                     padding-top: 50px;
+//                     flex-basis: 1vh;
+//                     background-color: $color-darkBlue;
+//                     border: none;
+//                     font-size: 1.4em;
+//                     color: white;
+//                     border-bottom: 1px solid white;
+//                     &:focus {
+//                         box-sizing: border-box;
+//                         outline: none;
+//                         padding-left: 1vw;
+//                         padding-bottom: 1vw;
+//                      }
+//                 }
+//                 div.textArea {
+//                     ::placeholder {
+//                         position: absolute;
+//                         bottom: 2vw;
+//                         left: 1vw;
+//                     }
+//                     textarea {
+//                         width: 100%;
+//                         border: none;
+//                         border-bottom: 1px solid white;
+//                         background-color: $color-darkBlue;
+//                         font-size: 1.4em;
+//                         color: white;
+//                         padding-top: 1vw;
+//                         &:focus {
+//                             box-sizing: border-box;
+//                             outline: none;
+//                             padding-left: 1vw;
+//                             padding-top: 1vw;
+//                         }
+//                     }
+//                 }
+//                 .btn {
+//                     position: absolute;
+//                     bottom: 10vh;
+//                     left: 0;
+//                     height: 4vh;
+//                     width: 6vw;
+//                     font-family: $font-main;
+//                     font-size: 1.4em;
+//                     text-transform: uppercase;
+//                     background-color: white;
+//                     border: none;
+//                     cursor: pointer;
+//                     transition: .3s;
+//                     &:hover {
+//                         color: $color-green;
+//                         background-color: $color-darkBlue;
+//                         box-shadow: 0 0 10px white;
+//                     }
+//                 }
+//             }
+//             div.socials {
+//                 display: flex;
+//                 width: 8vw;
+//                 justify-content: space-around;
+//                 position: absolute;
+//                 bottom: 10vh;
+//                 right: 1.5vw;
+//                 font-size: 1.6em;
+//                 a {
+//                     flex-basis: 1.6vw;
+//                     height: 1.6vw;
+//                     border-radius: 50%;
+//                     background-color: white;
+//                     text-decoration: none;
+//                     transition: .3s;
+//                     &:hover {
+//                         box-shadow: 0 0 10px white;
+//                     }
+//                     i {
+//                         display: block;
+//                         color: $color-darkBlue;
+//                         line-height: 1.6vw;
+//                         text-align: center;
+//                     }
+//                 }
+//             }
+//         }
+//         div.icons {
+//             display: flex;
+//             width: 30vw;
+//             justify-content: space-between;
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             a {
+//                 font-size: 1.4em;
+//                 text-decoration: none;
+//                 color: white;
+//                 i {
+//                     padding-right: 0.5vw;
+//                     font-size: 2em;
+//                 }
+//             }
+//         }
+//         div.map {
+//             position: absolute;
+//             top: 9vh;
+//             right: 0;
+//             img {
+//                 display: block;
+//                 width: 90%;
+//                 margin: 0 0 0 10%;
+//             }
+//         }
+//         div.newsletter {
+//             position: absolute;
+//             top: 41vh;
+//             right: 0;
+//             width: 49%;
+//             h2 {
+//                 color: white;
+//                 font-size: 1.8em;
+//                 font-weight: 400;
+//                 padding-bottom: 1vh;
+//             }
+//             div.subscribe {
+//                 display: flex;
+//                 width: 100%;
+//                 background-color: pink;
+//                 ::placeholder {
+//                     position: absolute;
+//                     top: 50%;
+//                     left: 1vw;
+//                     transform: translateY(-50%);
+//                 }
+//                 input {
+//                     flex-grow: 2;
+//                     font-size: 1.4em;
+//                     &:focus {
+//                         outline: none;
+//                     }
+//                 }
+//                 .btnSubscribe {
+//                     height: 4vh;
+//                     flex-grow: 1;
+//                     font-family: $font-main;
+//                     font-size: 1.4em;
+//                     color: white;
+//                     text-transform: uppercase;
+//                     background-color: $color-green;
+//                     border: none;
+//                     cursor: pointer;
+//                     transition: .3s;
+//                     &:hover {
+//                         color: $color-green;
+//                         background-color: $color-darkBlue;
+//                         box-shadow: 0 0 10px white;
+//                     }
+//                 }
+//             }
+//         }
+//         div.footer {
+//             position: absolute;
+//             bottom: 0;
+//             left: 0;
+//             width: 100%;
+//             line-height: 3em;
+//             text-align: center;
+//             color: white;
+//             font-size: 1.6em;
+//             font-weight: 400;
+//             border-top: 1px solid white;
+//         }
+//     }
+// }
