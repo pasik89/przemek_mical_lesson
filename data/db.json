@@ -37,6 +37,10 @@
     {
       "name": "Contact Us",
       "url": "contact-us"
+    },
+    {
+      "name": "Login/Register",
+      "url": "login-register"
     }
   ]
 }
