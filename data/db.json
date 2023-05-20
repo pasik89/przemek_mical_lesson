@@ -2,18 +2,21 @@
   "carousel": [
     {
       "title": "Auto Diagnose",
-      "imgName": "car",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+      "imgName": "thr.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
+      "type": "innyTyp"
     },
     {
       "title": "Free Fuel",
-      "imgName": "fuel",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+      "imgName": "thr1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
+      "type": "innyTyp"
     },
     {
       "title": "Change tires",
-      "imgName": "tire",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+      "imgName": "thr2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
+      "type": "common"
     }
   ],
   "applications": [],
