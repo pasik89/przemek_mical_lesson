@@ -1,25 +1,50 @@
 {
   "carousel": [
     {
+      "id": 1,
       "title": "Auto Diagnose",
       "imgName": "thr.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
       "type": "innyTyp"
     },
     {
+      "id": 2,
       "title": "Free Fuel",
       "imgName": "thr1.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
       "type": "innyTyp"
     },
     {
+      "id": 3,
       "title": "Change tires",
       "imgName": "thr2.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
       "type": "common"
+    },
+    {
+      "title": "Change wheels",
+      "imgName": "thr2.png",
+      "description": "nasze teksty",
+      "type": "common",
+      "id": 4
     }
   ],
-  "applications": [],
+  "applications": [
+    {
+      "fullName": "sadasdasd",
+      "email": "zxdsadasd",
+      "phoneNumber": "3423424",
+      "message": "cvbvcbvcbvcb",
+      "id": 1
+    },
+    {
+      "fullName": "cvxcvcxv",
+      "email": "cvxcvcxv",
+      "phoneNumber": "",
+      "message": "dfgdfgdfgdsf",
+      "id": 2
+    }
+  ],
   "menu": [
     {
       "name": "Home",

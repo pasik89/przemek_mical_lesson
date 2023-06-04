@@ -43,7 +43,7 @@
         its layout. The point of using Lorem ipsum is that it has a more-or-less normal distribution of letters.</p>
       <div class="header__buttons-container">
         <a class="button header__button" href="#">More info</a>
-        <a class="button header__button" href="#contact">Contact us</a>
+        <button class="button header__button" id="btnPost">Contact us</button>
       </div>
     </div>
     <div class="header__image-container">
@@ -158,18 +158,18 @@
         </div>
       </div>
       <div class="contact__container-content">
-        <form class="contact__form" action="#">
-          <input class="contact__form-input" type="text" placeholder="Full Name">
-          <input class="contact__form-input" type="text" placeholder="Email">
-          <input class="contact__form-input" type="number" placeholder="Phone Number">
-          <textarea class="contact__form-textArea" name="Message" placeholder="Message" rows="6"></textarea>
+        <form class="contact__form" id="applicationsForm">
+          <input class="contact__form-input" type="text" name="fullName" placeholder="Full Name">
+          <input class="contact__form-input" type="text" name="email" placeholder="Email">
+          <input class="contact__form-input" type="number" name="phoneNumber" placeholder="Phone Number">
+          <textarea class="contact__form-textArea" name="message" placeholder="Message" rows="6"></textarea>
         </form>
         <div class="contact__map">
           <img class="contact__map-img" src="img/map.jpg" alt="">
         </div>
       </div>
       <div class="contact__container-socials">
-        <button class="contact__button button" type="submit">Send</button>
+        <button class="contact__button button" id="btnSubmitApp">Send</button>
         <div class="contact__socials">
           <a class="contact__social-dot" href="#"><i class="fa-brands fa-facebook-f"></i></a>
           <a class="contact__social-dot" href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -189,6 +189,7 @@
       </div>
     </div>
   </section>
+  <div id="applicationsContainer"></div>
 </body>
 
 </html>

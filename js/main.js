@@ -2,8 +2,11 @@ import "../css/normalize.css";
 import "../css/main.css";
 import "../scss/style.scss";
 import "../img/index";
-import { httpGet } from "./httpGet"
-import { Carousel } from "./carouselClass"
+import { httpGet } from "./httpGet";
+import { Carousel } from "./carouselClass";
+import { HttpRequestsShared } from './httpRequestClass';
+import { Applications } from "./applications";
+
 
 class Header extends HTMLElement {
   constructor() {
@@ -64,35 +67,35 @@ const blocksElements = await httpGet('carousel');
 
 
 
- /*
-  * @decription
-  * Array find() method  
-  */
+/*
+ * @decription
+ * Array find() method  
+ */
 
 const singleFoundedElement = blocksElements.find((element) => element.title === "Auto Diagnose");
 
 console.log(singleFoundedElement.title)
 
- /*
-  * @decription
-  * Array map() method
-  */
-const mappedBlocksElements = blocksElements.map((element) => ({ ...element, cosTam: 'aaa'}));
+/*
+ * @decription
+ * Array map() method
+ */
+const mappedBlocksElements = blocksElements.map((element) => ({ ...element, cosTam: 'aaa' }));
 
 console.log('blocksElements:: ', blocksElements)
 console.log('mappedBlocksElements:: ', mappedBlocksElements)
 
- /*
-  * @decription
-  * Array filter() method  
-  */
+/*
+ * @decription
+ * Array filter() method  
+ */
 
 const filteredBlocksElements = blocksElements.filter((element) => element.type === 'common');
 
 let filterCostam = [];
 
-for(let i = 0; i < blocksElements.length; i++) {
-  if(blocksElements[i].type === 'common') {
+for (let i = 0; i < blocksElements.length; i++) {
+  if (blocksElements[i].type === 'common') {
     filterCostam.push(blocksElements[i])
   }
 }
@@ -101,13 +104,13 @@ for(let i = 0; i < blocksElements.length; i++) {
 
 console.log('filteredBlocksElements:: ', filteredBlocksElements)
 
-  /*
-  * @decription
-  * Array reduce() method and sum array  
-  */
+/*
+* @decription
+* Array reduce() method and sum array  
+*/
 
 
-const newArray = [1, 2, 3, 5,  67];
+const newArray = [1, 2, 3, 5, 67];
 
 console.log(newArray[0] + newArray[1] + newArray[2])
 
@@ -128,7 +131,7 @@ console.log('reduceSummedArray:: ', reduceSummedArray)
 const modifiedObject = blocksElements.reduce((prev, curr) => {
   const { type } = curr;
 
-  const filterEl = (searchType) => blocksElements.filter(element => element.type === searchType) 
+  const filterEl = (searchType) => blocksElements.filter(element => element.type === searchType)
 
   return { ...prev, [type]: filterEl(type) }
 }, {})
@@ -146,10 +149,10 @@ console.log(modifiedObject);
  */
 
 
-  /*
-  * @decription
-  * Object assing() method  
-  */
+/*
+* @decription
+* Object assing() method  
+*/
 
 const obj1 = {
   user: 'Przemek',
@@ -166,83 +169,83 @@ const userInfoObject = Object.assign(obj1, obj2);
 console.log('assignedObject:: ', userInfoObject)
 
 
-  /*
-  * @decription
-  * Object keys() method  
-  */
+/*
+* @decription
+* Object keys() method  
+*/
 
 const objectKeys = Object.keys(userInfoObject);
 
 console.log('objectKeys:: ', objectKeys)
 
-  /*
-  * @decription
-  * Object values() method  
-  */
+/*
+* @decription
+* Object values() method  
+*/
 
-  const objectValues = Object.values(userInfoObject);
+const objectValues = Object.values(userInfoObject);
 
-  console.log('objectValues:: ', objectValues)
-  console.log('objectValues:: ', objectValues.find(el => el === 'Przemek'))
- 
-
-  
-  /*
-  * @decription
-  * Object entries() method  
-  */
-  console.log('Object.entries(userInfoObject):: ', Object.entries(userInfoObject))
-  for(let [key, value] of Object.entries(userInfoObject)) {
-    console.log('Object.entries Key:: ', key)
-    console.log('Object.entries value:: ', value)
-
-    console.log(`To jest klucz: ${key}, a to jest wartość: ${value}`)
-  }
+console.log('objectValues:: ', objectValues)
+console.log('objectValues:: ', objectValues.find(el => el === 'Przemek'))
 
 
 
-  /*
-  * @decription
-  * Object create() method  
-  */
+/*
+* @decription
+* Object entries() method  
+*/
+console.log('Object.entries(userInfoObject):: ', Object.entries(userInfoObject))
+for (let [key, value] of Object.entries(userInfoObject)) {
+  console.log('Object.entries Key:: ', key)
+  console.log('Object.entries value:: ', value)
 
-  
-  const test = Object.create(obj1);
+  console.log(`To jest klucz: ${key}, a to jest wartość: ${value}`)
+}
 
-  console.log('obj1:: ', obj1)
-  console.log('test:: ', test)
+
+
+/*
+* @decription
+* Object create() method  
+*/
+
+
+const test = Object.create(obj1);
+
+console.log('obj1:: ', obj1)
+console.log('test:: ', test)
 
 
 test.test = "kacper"
 
 // test.test2 = []
 
-  console.log('obj1:: ', obj1)
-  console.log('test:: ', test.user)
-  console.log('test:: ', test.role)
-  console.log('test:: ', test.test)
-  console.log('test:: ', test?.test2?.map((el) => el))
-  console.log('test.hasOwnProperty:: ', test.hasOwnProperty('test'))
+console.log('obj1:: ', obj1)
+console.log('test:: ', test.user)
+console.log('test:: ', test.role)
+console.log('test:: ', test.test)
+console.log('test:: ', test?.test2?.map((el) => el))
+console.log('test.hasOwnProperty:: ', test.hasOwnProperty('test'))
 
 
-  class User {
-    friendsList = ['Adrianek', 'Przemek', 'Nikolina', 'Monika']
+class User {
+  friendsList = ['Adrianek', 'Przemek', 'Nikolina', 'Monika']
 
-    constructor(name, surname) {
-      this.name = name
-      this.surname = surname
-    }
-
-    jakasMetoda() {
-      console.log(this.friendsList);
-    }
-
-    wypiszImieINazwisko() {
-      console.log('WYPISZ', this.name, this.surname)
-    }
+  constructor(name, surname) {
+    this.name = name
+    this.surname = surname
   }
 
-  const userClassObject = new User();
+  jakasMetoda() {
+    console.log(this.friendsList);
+  }
+
+  wypiszImieINazwisko() {
+    console.log('WYPISZ', this.name, this.surname)
+  }
+}
+
+const userClassObject = new User();
 
 console.log(userClassObject.jakasMetoda())
 
@@ -305,3 +308,32 @@ const carouselObj = new Carousel();
 
 carouselObj.getCarouselItems();
 carouselObj.createCarouselElements();
+
+const btnPostMethod = document.querySelector('#btnPost');
+btnPostMethod.addEventListener('click', () => {
+  console.log('click!');
+
+  carouselObj.postCarouselItems()
+    .then((response) => {
+      carouselObj.getCarouselItems();
+
+      return response.json();
+    })
+    .then((data) => {
+      carouselObj.appendItem(data);
+    });
+});
+
+
+const applications = new Applications();
+
+const btnSubmitApplications = document.querySelector('#btnSubmitApp');
+
+applications.createApplications();
+
+btnSubmitApplications.addEventListener('click', (event) => {
+
+  event.preventDefault();
+
+  applications.sendApplications();
+})

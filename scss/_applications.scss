@@ -1,0 +1,14 @@
+.applications {
+  &__container {
+    padding: 20px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    font-size: 20px;
+  }
+}
