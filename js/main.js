@@ -302,7 +302,7 @@ console.log(nikolinaUserClassObject.test)
 
 
 
-
+// carousel
 
 const carouselObj = new Carousel();
 
@@ -324,6 +324,8 @@ btnPostMethod.addEventListener('click', () => {
     });
 });
 
+
+// applications
 
 const applications = new Applications();
 

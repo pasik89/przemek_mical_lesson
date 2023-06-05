@@ -1,3 +1,5 @@
+// carousel
+
 import { HttpRequestsShared } from './httpRequestClass'
 
 export class Carousel {

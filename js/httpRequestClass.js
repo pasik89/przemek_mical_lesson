@@ -50,3 +50,5 @@ export class HttpRequestsShared {
     })
   }
 }
+
+// console.log

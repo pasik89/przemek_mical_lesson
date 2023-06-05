@@ -17,3 +17,5 @@ export function httpGet(endpoint) {
         xhr.send();
     });
 }
+
+// console.log()

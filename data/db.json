@@ -29,22 +29,7 @@
       "id": 4
     }
   ],
-  "applications": [
-    {
-      "fullName": "sadasdasd",
-      "email": "zxdsadasd",
-      "phoneNumber": "3423424",
-      "message": "cvbvcbvcbvcb",
-      "id": 1
-    },
-    {
-      "fullName": "cvxcvcxv",
-      "email": "cvxcvcxv",
-      "phoneNumber": "",
-      "message": "dfgdfgdfgdsf",
-      "id": 2
-    }
-  ],
+  "applications": [],
   "menu": [
     {
       "name": "Home",

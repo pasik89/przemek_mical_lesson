@@ -1,3 +1,5 @@
+// applications
+
 import { HttpRequestsShared } from "./httpRequestClass"
 
 export class Applications {
