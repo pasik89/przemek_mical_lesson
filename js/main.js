@@ -4,6 +4,7 @@ import "../scss/style.scss";
 import "../img/index";
 import { httpGet } from "./httpGet"
 import { Carousel } from "./carouselClass"
+import { Applications } from "./applications";
 
 class Header extends HTMLElement {
   constructor() {
@@ -297,11 +298,42 @@ console.log(nikolinaUserClassObject.test)
 
 
 
-
-
-
+// CAROUSEL SECTION
 
 const carouselObj = new Carousel();
 
-carouselObj.getCarouselItems();
 carouselObj.createCarouselElements();
+
+const buttonPost = document.getElementById('test');
+
+buttonPost.addEventListener('click', () => {
+  carouselObj.postElement()
+  .then((response) => {
+    carouselObj.getCarouselItems();
+
+    return response.json();
+  })
+  .then((data) => {
+    carouselObj.appendItem(data);
+  })
+})
+
+
+// APPLICATIONS SECTION
+
+const applications = new Applications();
+
+applications.createApplications();
+
+applications.applicationsSubmitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  applications.sendApplication().then((response) => {
+    applications.getApplications();
+
+    return response.json();
+  })
+  .then((data) => {
+    applications.appendApplication(data);
+  });
+})

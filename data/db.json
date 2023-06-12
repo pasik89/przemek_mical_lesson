@@ -1,25 +1,176 @@
 {
   "carousel": [
     {
+      "id": 1,
       "title": "Auto Diagnose",
       "imgName": "thr.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
       "type": "innyTyp"
     },
     {
+      "id": 2,
       "title": "Free Fuel",
       "imgName": "thr1.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
       "type": "innyTyp"
     },
     {
+      "id": 3,
       "title": "Change tires",
       "imgName": "thr2.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget.",
       "type": "common"
+    },
+    {
+      "title": "AAA",
+      "imgName": "thr1.png",
+      "description": "sadfsdagsdfgfsdgf.",
+      "type": "innyTyp",
+      "id": 4
     }
   ],
-  "applications": [],
+  "applications": [
+    {
+      "fullName": "Kacper Pasik",
+      "email": "k_pasik@wp.pl",
+      "phoneNumber": "517588273",
+      "message": "Super aplikacja",
+      "id": 1
+    },
+    {
+      "fullName": "Przemek",
+      "email": "Mail@wp.pl",
+      "phoneNumber": "123123123",
+      "message": "Coś tanm",
+      "id": 2
+    },
+    {
+      "fullName": "test",
+      "email": "test",
+      "phoneNumber": "123123",
+      "message": "test",
+      "id": 3
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 4
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 5
+    },
+    {
+      "fullName": "test",
+      "email": "test",
+      "phoneNumber": "123",
+      "message": "ttasxcdazXCSsd",
+      "id": 6
+    },
+    {
+      "fullName": "test",
+      "email": "test",
+      "phoneNumber": "123",
+      "message": "asdf",
+      "id": 7
+    },
+    {
+      "fullName": "asd",
+      "email": "13",
+      "phoneNumber": "123",
+      "message": "123",
+      "id": 8
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 9
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 10
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 11
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 12
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 13
+    },
+    {
+      "fullName": "asdasd",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 14
+    },
+    {
+      "fullName": "4wa",
+      "email": "213asd",
+      "phoneNumber": "231",
+      "message": "asd",
+      "id": 15
+    },
+    {
+      "fullName": "Adrianek",
+      "email": "adi@wp.pl",
+      "phoneNumber": "123123123",
+      "message": "asdasdas",
+      "id": 16
+    },
+    {
+      "fullName": "asdasd",
+      "email": "123",
+      "phoneNumber": "23",
+      "message": "asd",
+      "id": 17
+    },
+    {
+      "fullName": "test",
+      "email": "test",
+      "phoneNumber": "123",
+      "message": "asdfr",
+      "id": 18
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "message": "",
+      "id": 19
+    },
+    {
+      "fullName": "as",
+      "email": "asd",
+      "phoneNumber": "132",
+      "message": "ase",
+      "id": 20
+    }
+  ],
   "menu": [
     {
       "name": "Home",

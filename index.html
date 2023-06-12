@@ -42,7 +42,7 @@
         of a page when looking at
         its layout. The point of using Lorem ipsum is that it has a more-or-less normal distribution of letters.</p>
       <div class="header__buttons-container">
-        <a class="button header__button" href="#">More info</a>
+        <button class="button header__button" id="test">More info</button>
         <a class="button header__button" href="#contact">Contact us</a>
       </div>
     </div>
@@ -158,11 +158,11 @@
         </div>
       </div>
       <div class="contact__container-content">
-        <form class="contact__form" action="#">
-          <input class="contact__form-input" type="text" placeholder="Full Name">
-          <input class="contact__form-input" type="text" placeholder="Email">
-          <input class="contact__form-input" type="number" placeholder="Phone Number">
-          <textarea class="contact__form-textArea" name="Message" placeholder="Message" rows="6"></textarea>
+        <form class="contact__form" action="#" id="applicationForm">
+          <input id="name" class="contact__form-input" type="text" placeholder="Full Name" name="fullName"/>
+          <input class="contact__form-input" type="text" placeholder="Email" name="email"/>
+          <input class="contact__form-input" type="number" placeholder="Phone Number" name="phoneNumber"/>
+          <textarea class="contact__form-textArea" name="message" placeholder="Message" rows="6"></textarea>
         </form>
         <div class="contact__map">
           <img class="contact__map-img" src="img/map.jpg" alt="">
@@ -188,6 +188,9 @@
         <p class="contact__footer">Copyright 2019 All Right Reserved By Free html Templates</p>
       </div>
     </div>
+  </section>
+  <section>
+    <div class="applications__container"></div>
   </section>
 </body>
 

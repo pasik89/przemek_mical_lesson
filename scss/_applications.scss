@@ -1,0 +1,17 @@
+.applications {
+    &__container {
+        padding: 20px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__item {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
